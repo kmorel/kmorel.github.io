@@ -1,0 +1,18 @@
+figcaption {
+    font: smaller sans-serif;
+}
+
+.image-left {
+    float: left;
+    padding-right: 5px;
+    clear: both;
+    position: relative;
+    max-width: 100%;
+}
+.image-right {
+    float: right;
+    padding-left: 5px;
+    clear: both;
+    position: relative;
+    max-width: 100%;
+}
