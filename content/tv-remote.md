@@ -1,0 +1,4 @@
+---
+redirect: posts/tv-remote/
+---
+
