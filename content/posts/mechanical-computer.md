@@ -86,7 +86,7 @@ released.
       width="300px"
       height="219"
       caption="An SR flop-flop from NOR gates. "
-      attr="Image courtesy of Napalm Llama. Some rights reserved."
+      attr="© Napalm Llama, Creative Commons Attribution-Share Alike"
       attrlink_="https://commons.wikimedia.org/wiki/File:R-S_mk2.gif"
   >}}
 {{< /right >}}
