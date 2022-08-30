@@ -21,3 +21,13 @@ figcaption {
     display: flex;
     justify-content: center;
 }
+
+table.image-table {
+    border: none;
+    vertical-align: top;
+}
+
+table.image-table * {
+    border: none;
+    vertical-align: top;
+}
