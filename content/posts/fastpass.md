@@ -4,14 +4,6 @@ date: 2015-07-31
 tags: [ economics, lines, queues, Disney ]
 ---
 
-{{< right >}}
-{{< figure
-  src="disneyland-selfie.jpg"
-  caption="Self portraits are hard. Maybe I should get a selfie stick."
-  width="300px"
->}}
-{{< /right >}}
-
 This summer our family took a vacation in southern California, and we had a
 fun excursion to the [Disney theme parks]. What I particularly enjoy about
 Disney's parks, apart from the technically impressive rides themselves, is
@@ -20,6 +12,14 @@ the park to the time you leave. You can see little details in everything
 from the escalators in the parking garage to the storefront facades to the
 activities in line. And one of the most notable features is the [Fastpass]
 option.
+
+{{< right >}}
+{{< figure
+  src="disneyland-selfie.jpg"
+  caption="Self portraits are hard. Maybe I should get a selfie stick."
+  width="300px"
+>}}
+{{< /right >}}
 
 For those who have not yet experienced it yet, Fastpass is a free service
 in the Disney parks that allows you to skip to the front of the line on
