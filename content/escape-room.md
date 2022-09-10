@@ -1,0 +1,4 @@
+---
+redirect: "posts/escape-room/"
+---
+
