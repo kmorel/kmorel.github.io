@@ -1,0 +1,4 @@
+---
+redirect: "posts/vaccine-correlations/"
+---
+
