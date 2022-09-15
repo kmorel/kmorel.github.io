@@ -1,0 +1,121 @@
+<!doctype html><html lang=en itemscope itemtype=http://schema.org/WebPage><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>The Three Birthday Problem - The Blog of Dr. Moron</title><meta name=description content="A while ago one of my aunts posted that 3 of her Facebook friends were having a birthday that day. It seems like a remarkable coincidence, but is it? This observation is reminiscent of a well known problem in probability that yields a surprising result.
+The Conventional 2 Birthday Problem The conventional probability theory known as the birthday problem or birthday paradox concerns the probability that, given a group of N people, at least two such people in the group have the same birthday."><meta name=author content="Kenneth Moreland"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"The Blog of Dr. Moron","url":"https:\/\/www.drmoron.org"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/www.drmoron.org"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.drmoron.org","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/www.drmoron.org\/posts\/3-birthday-problem\/","name":"The three birthday problem"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Kenneth Moreland"},"headline":"The Three Birthday Problem","description":"A while ago one of my aunts posted that 3 of her Facebook friends were having a birthday that day. It seems like a remarkable coincidence, but is it? This observation is reminiscent of a well known problem in probability that yields a surprising result.\nThe Conventional 2 Birthday Problem The conventional probability theory known as the birthday problem or birthday paradox concerns the probability that, given a group of N people, at least two such people in the group have the same birthday.","inLanguage":"en","wordCount":1298,"datePublished":"2013-08-14T00:00:00","dateModified":"2013-08-14T00:00:00","image":"https:\/\/www.gravatar.com\/avatar\/5785d806cffc98ab63daa2d1a43f0c5e?s=100","keywords":["probability, birthday"],"mainEntityOfPage":"https:\/\/www.drmoron.org\/posts\/3-birthday-problem\/","publisher":{"@type":"Organization","name":"https:\/\/www.drmoron.org","logo":{"@type":"ImageObject","url":"https:\/\/www.gravatar.com\/avatar\/5785d806cffc98ab63daa2d1a43f0c5e?s=100","height":60,"width":60}}}</script><meta property="og:title" content="The Three Birthday Problem"><meta property="og:description" content="A while ago one of my aunts posted that 3 of her Facebook friends were having a birthday that day. It seems like a remarkable coincidence, but is it? This observation is reminiscent of a well known problem in probability that yields a surprising result.
+The Conventional 2 Birthday Problem The conventional probability theory known as the birthday problem or birthday paradox concerns the probability that, given a group of N people, at least two such people in the group have the same birthday."><meta property="og:image" content="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100"><meta property="og:url" content="https://www.drmoron.org/posts/3-birthday-problem/"><meta property="og:type" content="website"><meta property="og:site_name" content="The Blog of Dr. Moron"><meta name=twitter:title content="The Three Birthday Problem"><meta name=twitter:description content="A while ago one of my aunts posted that 3 of her Facebook friends were having a birthday that day. It seems like a remarkable coincidence, but is it? This observation is reminiscent of a well known …"><meta name=twitter:image content="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100"><meta name=twitter:card content="summary_large_image"><link href=https://www.drmoron.org/favicon.png rel=icon type=image/x-icon><meta name=generator content="Hugo 0.102.3"><link rel=alternate href=https://www.drmoron.org/index.xml type=application/rss+xml title="The Blog of Dr. Moron"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.5.0/css/all.css integrity=sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU crossorigin=anonymous><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><link rel=stylesheet href=https://www.drmoron.org/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><link rel=stylesheet href=https://www.drmoron.org/css/highlight.min.css><link rel=stylesheet href=https://www.drmoron.org/css/codeblock.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css integrity=sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css integrity=sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R crossorigin=anonymous><link rel=stylesheet href=https://www.drmoron.org/css/custom.css></head><body><nav class="navbar navbar-default navbar-fixed-top navbar-custom"><div class=container-fluid><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=#main-navbar>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span></button>
+<a class=navbar-brand href=https://www.drmoron.org>The Blog of Dr. Moron</a></div><div class="collapse navbar-collapse" id=main-navbar><ul class="nav navbar-nav navbar-right"><li><a title=Blog href=/>Blog</a></li><li><a title=About href=/page/about/>About</a></li><li><a title=Tags href=/tags>Tags</a></li></ul></div><div class=avatar-container><div class=avatar-img-border><a title="The Blog of Dr. Moron" href=https://www.drmoron.org><img class=avatar-img src="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100" alt="The Blog of Dr. Moron"></a></div></div></div></nav><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=posts-heading><h1>The Three Birthday Problem</h1><hr class=small></div></div></div></div></div></header><div class=container role=main><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>A while ago one of my aunts posted that 3 of her Facebook friends were
+having a birthday that day. It seems like a remarkable coincidence, but is
+it? This observation is reminiscent of a well known problem in probability
+that yields a surprising result.</p><h3 id=the-conventional-2-birthday-problem>The Conventional 2 Birthday Problem</h3><p>The conventional probability theory known as the birthday problem or
+birthday paradox concerns the probability that, given a group of <em>N</em>
+people, at least two such people in the group have the same birthday. As it
+turns out, the probability is probably higher than you think.</p><p>What makes this problem non-intuitive is that we are not measuring whether
+<em>you</em> have the same birthday as someone else but whether <em>any</em> two people
+have the same birthday. So we don&rsquo;t care so much about how many people are
+in the group but how many pairs of people are in the group, and that number
+grows much faster. In a cozy group of 5 people there are only 10 pairs, but
+in a classroom of 25 students there are 300 pairs.</p><p>OK, back to the question: How likely is it that a pair of people in a group
+have the same birthday? It should be the probability that two people have
+the same birthday (about 1/365, assuming all birthdays are equally likely
+and ignoring leap days) times the number of pairs in that group, right?
+Well, no. It&rsquo;s not that easy. (Nothing in stupid probability ever is.) You
+also have to take into account the possibility that more than one pair has
+the same birthday, and that&rsquo;s where things get complicated.</p><p>I use a trick to solve this problem. Rather than compute the probability
+that two people have the same birthday, compute the probability that <em>no
+one</em> has the same birthday as anyone else. To compute that, I consider the
+people one at a time (in an arbitrary but fixed order). The first person
+has no one to pair with, so the probability of no same birthday is 1
+(100%). The second person will not match with the first person with
+probability 364/365. The third person will not match with the first two
+with probability 363/356. And so on. Just multiply those numbers up and
+take the inverse. There is your solution.</p><p>$$
+\mathrm{P}(\textrm{shared b-day for } N) =
+1 - \frac{356 \cdot 364 \cdot 363 \cdot 362 \cdots (366 - N)}{365^{N}}
+$$</p><div class=div-right><link rel=stylesheet href=https://www.drmoron.org/css/hugo-easy-gallery.css><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgplot-2-birthday.png)><img itemprop=thumbnail src=plot-2-birthday.png alt="Probability of duplicate birthdays for groups of increasing size."></div><a href=plot-2-birthday.png itemprop=contentUrl></a><figcaption><p>Probability of duplicate birthdays for groups of increasing size.</p></figcaption></figure></div></div><p>The plot at right shows the probability that at least one pair in a group
+has the same birthday for increasing group sizes. Surprisingly with a group
+of people as small as 23, it is even money whether some pair will have the
+same birthday. At a group of size 57, there is a 99% chance for a birthday
+collision! My probability teacher once suggested that this is an amusing
+property to try out at parties. (Of course, I&rsquo;m guessing that means my math
+teacher wasn&rsquo;t invited to many parties.)</p><h3 id=the-3-birthday-problem>The 3 Birthday Problem</h3><p>Interesting (or, at least, I find it interesting), but so far we haven&rsquo;t
+addressed my aunt&rsquo;s situation where <em>3</em> people have the same birthday. The
+conventional birthday problem tells us nothing about the 3 birthday
+problem although it leads me to suspect the probability is greater than
+what intuition would tell you.</p><p>So what is the probability for, given a group of people, that three have
+the same birthday? The answer is&mldr; I don&rsquo;t know. The trick I used for a
+pair of people doesn&rsquo;t work for 3, and the counting just gets too
+complicated for my little brain.</p><p>Fortunately, I have another trick up my sleeve. Rather than figure out the
+exact solution, I can write a simulator program to estimate the
+probability. Here&rsquo;s how it works. The simulator sets up an empty (virtual)
+room. It then lets in people one at a time. Each person coming in has a
+random birthday. The simulation continues doing this until someone comes in
+with a birthday that completes a triple.</p><p>That, of course, does not give us any probabilities. If we run the
+simulation again, we will (probably) get a different answer. But, if we run
+the simulation enough times, we can estimate the probabilities as the
+percentage of times the simulated group had 3 people with the same
+birthday. There is a very rigorous branch of computational science to
+determine the number of samples needed and the uncertainty remaining. But
+screw all that; I just ran the simulation for an excessive 100,000
+times. For those who would like to run the simulator yourself, I have <a href=https://gist.github.com/kmorel/6567225>the
+code posted here</a>.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgplot-3-birthday.png)><img itemprop=thumbnail src=plot-3-birthday.png alt="Probability of having 3 duplicate birthdays for groups of increasing size."></div><a href=plot-3-birthday.png itemprop=contentUrl></a><figcaption><p>Probability of having 3 duplicate birthdays for groups of increasing size.</p></figcaption></figure></div></div><p>The plot at right shows the probability that at least one set of three
+people in a group has the same birthday for increasing group sizes. (The
+plot for groups of size 2 is also shown.) We see that the 3 birthday
+problem does indeed behave very similarly to the 2 birthday problem, but
+with expected shifted probabilities. With only 87 people in the group, the
+probability of having 3 simultaneous birthdays is 50%. Having 87 &ldquo;friends&rdquo;
+is pretty common for even casual Facebook users. Heck, I have more than 100
+friends despite being unpopular and generally annoying. I see that my aunt
+now has about 150 Facebook friends. That makes having 3 friends with the
+same birthday pretty darn likely at over 96% probability.</p><h3 id=even-more-coincident-birthdays>Even More Coincident Birthdays</h3><p>But why stop there? How likely is it to have 4 birthdays the same? Or 5? Or
+6? The nice thing about using the simulator is that it is easy to expand to
+larger counts (you just have to wait longer). If you took a look at my
+<a href=https://gist.github.com/kmorel/6567225>simulator code</a>, you may have
+already noticed that it measures up to 6 simultaneous birthdays.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgplot-6-birthday.png)><img itemprop=thumbnail src=plot-6-birthday.png alt="Probability of having up to 6 duplicate birthdays for groups of increasing size."></div><a href=plot-6-birthday.png itemprop=contentUrl></a><figcaption><p>Probability of having up to 6 duplicate birthdays for groups of increasing size.</p></figcaption></figure></div></div><p>Here is a report of how likely it is to have up to six simultaneous
+birthdays. (The full data for this plot are <a href=https://gist.github.com/kmorel/6567773>posted
+here</a>.) As we increase the number
+of simultaneous birthdays, we need a larger group size to make it
+probable. (No surprise there.) Also note that the behaviors of these curves
+are similar. They all start off unlikely and then the curve dramatically
+bends upward.</p><div style=clear:both></div><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgplot-birthday-trend.png)><img itemprop=thumbnail src=plot-birthday-trend.png alt="Trend of the likelihood of having N people with the same birthday."></div><a href=plot-birthday-trend.png itemprop=contentUrl></a><figcaption><p>Trend of the likelihood of having N people with the same birthday.</p></figcaption></figure></div></div><p>This next plot demonstrates the trend of the <em>N</em> birthday problem. The plot
+shows the size of the group necessary to hit a particular probability for
+each version of the birthday problem. At the top of the filled lines is the
+group size for a 99% probability, which I take for almost certainty.</p><p>What I find most interesting about this plot is the grouping of the middle
+quartiles, between 25% and 75%. Although this represents half of the
+probability space, these are bunched in a small group for every birthday
+problem. This is indicative of the sharp upward swing in the S shape of the
+curves.</p><h3 id=final-remarks>Final Remarks</h3><p>When I started speculating about the 3 birthday problem, I really had never
+considered anything more than the 2 birthday problem. I could not find any
+other references to the birthday problem with any more than pairs of
+identical birthdays although perhaps I just have bad Google-fu. It was
+gratifying to find that the solution matched my general expectation, which
+is so seldom the case in probability.</p><p>Anyone interested in probability or this problem should check out
+Wikipedia&rsquo;s <a href=http://en.wikipedia.org/wiki/Birthday_problem>article on the birthday
+problem</a>. It contains a much
+deeper analysis than I give here.</p><p>Finally, it is a little ungratifying that I was unable to come up with a
+closed solution for the 3 birthday problem. If you find one, let me know.</p><div class=blog-tags><a href=https://www.drmoron.org/tags/probability/>probability</a>&nbsp;
+<a href=https://www.drmoron.org/tags/birthday/>birthday</a>&nbsp;</div><hr><section id=social-share><div class="list-inline footer-links"><div class=share-box aria-hidden=true><ul class=share><li><a href="//twitter.com/share?url=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f&text=The%20Three%20Birthday%20Problem&via=" target=_blank title="Share on Twitter"><i class="fab fa-twitter"></i></a></li><li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f" target=_blank title="Share on Facebook"><i class="fab fa-facebook"></i></a></li><li><a href="//reddit.com/submit?url=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f&title=The%20Three%20Birthday%20Problem" target=_blank title="Share on Reddit"><i class="fab fa-reddit"></i></a></li><li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f&title=The%20Three%20Birthday%20Problem" target=_blank title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a></li><li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f&title=The%20Three%20Birthday%20Problem" target=_blank title="Share on StumbleUpon"><i class="fab fa-stumbleupon"></i></a></li><li><a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.drmoron.org%2fposts%2f3-birthday-problem%2f&description=The%20Three%20Birthday%20Problem" target=_blank title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li></ul></div></div></section></article><ul class="pager blog-pager"><li class=previous><a href=https://www.drmoron.org/posts/mechanical-computer/ data-toggle=tooltip data-placement=top title="Lego Mechanical Computer">&larr; Previous Post</a></li><li class=next><a href=https://www.drmoron.org/posts/vislies-2013/ data-toggle=tooltip data-placement=top title="VisLies 2013">Next Post &rarr;</a></li></ul></div></div></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a href=mailto:morelandsnl@gmail.com title="Email me"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://www.facebook.com/kenneth.moreland.7 title=Facebook><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-facebook fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://github.com/kmorel title=GitHub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://gitlab.com/kmorel title=GitLab><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://bitbucket.org/kennethmoreland title=Bitbucket><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-bitbucket fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://linkedin.com/in/kmorel title=LinkedIn><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://stackoverflow.com/users/4971509/kenneth-moreland title=StackOverflow><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://www.youtube.com/channel/UC775K7V57u6GXF2jBqeUSMw title=Youtube><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="credits copyright text-muted"><a href=https://www.kennethmoreland.com>Kenneth Moreland</a>
+&nbsp;&bull;&nbsp;&copy;
+2013 - 2021
+&nbsp;&bull;&nbsp;
+<a href=https://www.drmoron.org>The Blog of Dr. Moron</a></p><p class="credits theme-by text-muted"><a href=https://gohugo.io>Hugo v0.102.3</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a></p></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous></script>
+<script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src=https://www.drmoron.org/js/main.js></script>
+<script src=https://www.drmoron.org/js/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script><script>$(document).ready(function(){$("pre.chroma").css("padding","0")})</script><script>renderMathInElement(document.body)</script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js integrity=sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js integrity=sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q crossorigin=anonymous></script><script src=https://www.drmoron.org/js/load-photoswipe.js></script></body></html>

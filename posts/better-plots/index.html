@@ -1,0 +1,378 @@
+<!doctype html><html lang=en itemscope itemtype=http://schema.org/WebPage><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><title>Building Better Plots - The Blog of Dr. Moron</title><meta name=description content="Consider the lowly chart. Chances are you have seen quite a few, perhaps in advertisements, news, reports, or papers. You have probably even made a few yourself for school or work. There was a time when making such figures was an arduous chore. But now every spreadsheet program worth its salt can quickly plot its data, and several programs and libraries are dedicated to plotting charts.
+A small montage of plots."><meta name=author content="Kenneth Moreland"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"The Blog of Dr. Moron","url":"https:\/\/www.drmoron.org"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/www.drmoron.org"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.drmoron.org","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/www.drmoron.org\/posts\/better-plots\/","name":"Building better plots"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"Kenneth Moreland"},"headline":"Building Better Plots","description":"Consider the lowly chart. Chances are you have seen quite a few, perhaps in advertisements, news, reports, or papers. You have probably even made a few yourself for school or work. There was a time when making such figures was an arduous chore. But now every spreadsheet program worth its salt can quickly plot its data, and several programs and libraries are dedicated to plotting charts.\nA small montage of plots.","inLanguage":"en","wordCount":3352,"datePublished":"2017-02-18T00:00:00","dateModified":"2017-02-18T00:00:00","image":"https:\/\/www.gravatar.com\/avatar\/5785d806cffc98ab63daa2d1a43f0c5e?s=100","keywords":["visualization, plots, charts"],"mainEntityOfPage":"https:\/\/www.drmoron.org\/posts\/better-plots\/","publisher":{"@type":"Organization","name":"https:\/\/www.drmoron.org","logo":{"@type":"ImageObject","url":"https:\/\/www.gravatar.com\/avatar\/5785d806cffc98ab63daa2d1a43f0c5e?s=100","height":60,"width":60}}}</script><meta property="og:title" content="Building Better Plots"><meta property="og:description" content="Consider the lowly chart. Chances are you have seen quite a few, perhaps in advertisements, news, reports, or papers. You have probably even made a few yourself for school or work. There was a time when making such figures was an arduous chore. But now every spreadsheet program worth its salt can quickly plot its data, and several programs and libraries are dedicated to plotting charts.
+A small montage of plots."><meta property="og:image" content="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100"><meta property="og:url" content="https://www.drmoron.org/posts/better-plots/"><meta property="og:type" content="website"><meta property="og:site_name" content="The Blog of Dr. Moron"><meta name=twitter:title content="Building Better Plots"><meta name=twitter:description content="Consider the lowly chart. Chances are you have seen quite a few, perhaps in advertisements, news, reports, or papers. You have probably even made a few yourself for school or work. There was a time …"><meta name=twitter:image content="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100"><meta name=twitter:card content="summary_large_image"><link href=https://www.drmoron.org/favicon.png rel=icon type=image/x-icon><meta name=generator content="Hugo 0.102.3"><link rel=alternate href=https://www.drmoron.org/index.xml type=application/rss+xml title="The Blog of Dr. Moron"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.5.0/css/all.css integrity=sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU crossorigin=anonymous><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><link rel=stylesheet href=https://www.drmoron.org/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><link rel=stylesheet href=https://www.drmoron.org/css/highlight.min.css><link rel=stylesheet href=https://www.drmoron.org/css/codeblock.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css integrity=sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css integrity=sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R crossorigin=anonymous><link rel=stylesheet href=https://www.drmoron.org/css/custom.css></head><body><nav class="navbar navbar-default navbar-fixed-top navbar-custom"><div class=container-fluid><div class=navbar-header><button type=button class=navbar-toggle data-toggle=collapse data-target=#main-navbar>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span></button>
+<a class=navbar-brand href=https://www.drmoron.org>The Blog of Dr. Moron</a></div><div class="collapse navbar-collapse" id=main-navbar><ul class="nav navbar-nav navbar-right"><li><a title=Blog href=/>Blog</a></li><li><a title=About href=/page/about/>About</a></li><li><a title=Tags href=/tags>Tags</a></li></ul></div><div class=avatar-container><div class=avatar-img-border><a title="The Blog of Dr. Moron" href=https://www.drmoron.org><img class=avatar-img src="https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100" alt="The Blog of Dr. Moron"></a></div></div></div></nav><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><header class=header-section><div class="intro-header no-img"><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=posts-heading><h1>Building Better Plots</h1><hr class=small></div></div></div></div></div></header><div class=container role=main><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><article role=main class=blog-post><p>Consider the lowly chart. Chances are you
+have seen quite a few, perhaps in advertisements, news, reports, or papers.
+You have probably even made a few yourself for school or work. There was a
+time when making such figures was an arduous chore. But now every
+spreadsheet program worth its salt can quickly plot its data, and several
+programs and libraries are dedicated to plotting charts.</p><div class=div-right><link rel=stylesheet href=https://www.drmoron.org/css/hugo-easy-gallery.css><div class=box style=max-width:400px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgchart-montage.png)><img itemprop=thumbnail src=chart-montage.png alt="A small montage of plots. Some are good. Some are bad. Let's find out which are which."></div><a href=chart-montage.png itemprop=contentUrl></a><figcaption><p>A small montage of plots. Some are good. Some are bad. Let's find out which are which.</p></figcaption></figure></div></div><p>But although all of this software gives you the tools to display data in
+meaningful ways, they also give you plenty of leverage to proverbially
+shoot yourself in the foot. Have you given much thought about what makes a
+plot effective and what makes the presentation obscure, unclear, or
+downright dishonest? Few people have, but if you care to read further we
+will go over some first principles on creating better plots.</p><p>Throughout this blog I will give several examples. Some will be good,
+others bad. Those examples showing a particularly good feature of plotting
+I will mark with <img src=good-example.png alt> whereas bad examples I will mark with
+<img src=bad-example.png alt>.</p><div style=clear:both></div><h2 id=chart-types>Chart Types</h2><p>Let us begin by going over some of the basic and common chart types. You
+likely have experience with all of these chart types, but we will discuss
+what each are best for and &mdash; just as important &mdash; when you shouldn&rsquo;t use
+them.</p><h3 id=x-y-charts>X-Y Charts</h3><p>Our first type of chart is the basic X-Y chart. The concept of the X-Y
+chart is simple. The space of the chart is gridded along horizontal and
+vertical axes, not unlike a map is gridded by latitude and longitude. When
+data are plotted on this chart, it can demonstrate a relationship between
+the variables of the two axes.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgXY_Trend.svg)><img itemprop=thumbnail src=XY_Trend.svg alt="Using an X-Y chart to capture a simple trend over time."></div><a href=XY_Trend.svg itemprop=contentUrl></a><figcaption><p>Using an X-Y chart to capture a simple trend over time.</p></figcaption></figure></div></div><p>For example, one common use of an X-Y chart is to show how something might
+change over time. This is done by representing time on the horizontal axis
+and then drawing a curve from left to right that represents how a measured
+variable changes over time. In the example here, we are plotting how the
+average miles per gallon (MPG) changed in vehicles manufactured between
+1970 and 1982. The data show a clear upward trend of MPG during this time
+period with the average under 20 MPG in 1970 and around 30 MPG by 1982.
+This response won&rsquo;t surprise anyone living in the U.S. during the <a href=https://en.wikipedia.org/wiki/1973_oil_crisis>oil
+crises of the 1970&rsquo;s</a>. It is only natural that consumers would demand more
+fuel efficient vehicles. (Incidentally, these data come from <a href=https://archive.ics.uci.edu/ml/datasets/Auto+MPG>an example
+for the CMU StatLib library</a>. We&rsquo;ll be using this data set a lot because it
+is fun and generates interesting plots.)</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgXY_Scatterplot.svg)><img itemprop=thumbnail src=XY_Scatterplot.svg alt="Using an X-Y chart for a scatterplot."></div><a href=XY_Scatterplot.svg itemprop=contentUrl></a><figcaption><p>Using an X-Y chart for a scatterplot.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>X-Y charts also make a good canvas to show lots of data at once.
+Scatterplots in particular are good at showing lots of data at once. In a
+scatterplot, you typically have two arbitrary variables on each axis, and
+then use those as coordinates to plot a dot for each data value. Because
+the dots are small, you can fit a lot of them on the chart at once.
+Consider the scatterplot that is shown here, which is showing the
+correlation between car weights and horsepower. This chart is showing
+values for almost 400 separate values, but it is organized in such a way to
+clearly show the relationship among them.</p><p>This is a good plot that shows us lots of interesting information about the
+data. Clearly there is a positive correlation between weight and
+horsepower. This is not surprising as heaver vehicles need more power to
+move them. We can also see a tighter correlation for lighter vehicles than
+heavier ones. Finally, we see an outlier with a significantly high
+horsepower for its body weight. (This outlier happens to be a <a href=https://en.wikipedia.org/wiki/Buick_Estate#1970>1970 Buick
+Estate Wagon</a>, and its weight is probably mis-entered in the data.)</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgXY_Scatterplot_Trend_Bad.svg)><img itemprop=thumbnail src=XY_Scatterplot_Trend_Bad.svg alt="This chart pretends the data represents a functional trend when it is not."></div><a href=XY_Scatterplot_Trend_Bad.svg itemprop=contentUrl></a><figcaption><p>This chart pretends the data represents a functional trend when it is not.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:100px;left:260px></div><p>So far we have given 2 examples of X-Y charts. One used a line and the
+other used dots. When should you use which? You should use a line only when
+your data can be thought of as representing a mathematical function where
+for each position on the horizontal axis there is exactly one right number
+for the vertical axis. The first example follows this criterion. You can
+think of time as a continuously increasing variable, and for each point in
+time there is a single average MPG for vehicles made at that time. That is
+not the case for the second example. There is no single horsepower that
+corresponds to a particular weight of a car. Trying to connect the values
+via a line creates a mess of no value as shown here.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgXY_Trend_Bad.svg)><img itemprop=thumbnail src=XY_Trend_Bad.svg alt='Using a line to demonstrate a "trend" over arbitrarily positioned discrete categories is nonsense.'></div><a href=XY_Trend_Bad.svg itemprop=contentUrl></a><figcaption><p>Using a line to demonstrate a "trend" over arbitrarily positioned discrete categories is nonsense.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:100px;left:260px></div><p>I bring this up because many plotting programs, such as Microsoft Excel&rsquo;s
+charts, tend to lead you toward line charts. It&rsquo;s not so much that the
+program is misbehaving. It is just that the program does not understand the
+data as well as you should. Granted, that last example was pretty extreme,
+but you have probably seen examples of plots like the one shown here where
+a line is plotted over categorical data. The order of the categories is
+completely arbitrary (in this case they are alphabetized, but that has no
+bearing on the data), and suggesting a trend by connecting the measures
+with a line is just false.</p><p>So how should categorical measurements like these be represented? A very
+good answer is: bar charts.</p><div style=clear:both></div><h3 id=bar-charts>Bar Charts</h3><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgBar.svg)><img itemprop=thumbnail src=Bar.svg alt="Bar charts are good at representing categorical data."></div><a href=Bar.svg itemprop=contentUrl></a><figcaption><p>Bar charts are good at representing categorical data.</p></figcaption></figure></div></div><p>Bar charts, as the name would imply, use bars whose relative length denotes
+value. Bar charts can be a very effective tool to compare measurements as
+people are pretty good at estimating relative linear distance. This example
+shows the previous data as a bar chart. Here the context makes clear what
+the data are and are not.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgBar_Sorted.svg)><img itemprop=thumbnail src=Bar_Sorted.svg alt="Sorting bars from highest value to lowest often makes the data easier to read."></div><a href=Bar_Sorted.svg itemprop=contentUrl></a><figcaption><p>Sorting bars from highest value to lowest often makes the data easier to read.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:10px;left:260px></div><p>One of the nice things about bar charts is that they provide a lot of
+leverage to move things around. For example, unless there is some grouping
+of the bars, the position of the bars can be reordered to make them easier
+to read. In particular, sorting them from highest to lowest value often
+makes bars easier to compare with each other. It also has the added benefit
+of providing an ordered list of categories from high to low, which itself
+can be useful.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgBar_Rotated.svg)><img itemprop=thumbnail src=Bar_Rotated.svg alt="Rotating the bars can sometimes make more efficient use of space."></div><a href=Bar_Rotated.svg itemprop=contentUrl></a><figcaption><p>Rotating the bars can sometimes make more efficient use of space.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:100px;left:260px></div><p>Another possible format change for bar charts is to rotate the chart so
+that the bars are horizontal, as shown here. Sometimes this layout of the
+bar chart can make more efficient use of the space and also provides a nice
+list of the categories. One word of warning: most plotting programs when
+orienting bars this way want to order them from the bottom up, so you may
+need to play with it to get a nice top to bottom ordering.</p><div style=clear:both></div><h3 id=pie-charts>Pie Charts</h3><div class=div-right><div class=box style=max-width:400px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgSillyPieChart_Thumbnail.png)><img itemprop=thumbnail src=SillyPieChart_Thumbnail.png alt="Sarcastic pie charts. The lowest form of all comedies."></div><a href=SillyPieChart.png itemprop=contentUrl></a><figcaption><p>Sarcastic pie charts. The lowest form of all comedies.</p></figcaption></figure></div></div><p>Pie charts are quite popular because they are an easily recognizable
+metaphor for parts of a whole. It is the same metaphor we use to teach
+fractions to elementary school children, so they are easy to understand.
+Plus, they look delicious.</p><p>However, I recommend never using pie charts. As a form of visual display,
+they are quite terrible. The problem is that people are not that good at
+comparing relative angles, especially when they are rotated with respect to
+one another.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:200px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgPieChart.svg)><img itemprop=thumbnail src=PieChart.svg alt="Guess which wedges are largest and smallest."></div><a href=PieBar_Compare.svg itemprop=contentUrl></a><figcaption><p>Guess which wedges are largest and smallest.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:0;left:175px></div><p>As a quick example of this phenomenon, take a quick look at the pie chart
+here. How easily can you determine which of the wedges in this pie is the
+largest? Which is the smallest? How sure are you? Take a few moments&mldr;
+three, two, one. OK. Now <a href=PieBar_Compare.svg>click here</a> to see the same
+values in a bar chart.</p><p>Did you get it right? Even if you guessed correctly, how sure were you? In
+any case, I&rsquo;m sure you will agree that it is much easier to measure the
+data with the bar chart. It is for this reason why I recommend never using
+a pie chart. There is no reason not to use a bar chart instead. If you are
+interested in more information on the subject I recommend <a href=http://www.perceptualedge.com/articles/visual_business_intelligence/save_the_pies_for_dessert.pdf>this white paper
+by Stephen Few</a>.</p><div style=clear:both></div><h3 id=data-by-area>Data by Area</h3><p>It is natural to use relative size to indicate the value of a data item. It
+is how bar charts work: Larger bars indicate larger values. It is also how
+pie charts work. Another method often employed is associating the area of a
+shape to a data value.</p><div class=div-right><div class=box style=max-width:239px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgAreaMystery.png)><img itemprop=thumbnail src=AreaMystery.png alt="How large is the smallest circle? "></div><a href=AreaReveal.png itemprop=contentUrl></a><figcaption><p>How large is the smallest circle? (Originally published in IEEE Spectrum.)</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:125px;left:175px></div><p>How well does this method stack up? Consider the example shown here. Not
+unlike a pie chart, this particular diagram is showing parts of a whole.
+The darkest outer circle represents 100% The next largest circle represents
+50%.</p><p>The question is, how large is the smallest circle, labeled with question
+marks? Is it 25%? 10%? 15%? Once you have guessed, <a href=AreaReveal.png>click
+here</a>.</p><p>How did you do? I&rsquo;m guessing that the circle was not as big as you thought.
+That is the problem with using area to represent values: It is difficult to
+determine the linear relationship between relative areas. In contrast, it
+is easy to determine the relative distance of bar charts, which are a much
+more effective display.</p><div style=clear:both></div><h3 id=3d-charts>3D Charts</h3><p>Many plotting programs have the ability to plot data using 3D graphics.
+Many designers are drawn to 3D graphics because the extra dimension
+provides a richer space to represent data. Designers also like 3D graphics
+because they look more interesting, and often 3D effects are extruded from
+2D information to make the view more engaging.</p><p>But 3D graphics are problematic. We can point out lots of technical issues
+with using 3D graphics for plotting, but they all come back to problems
+with interpreting 3D data through 2D images. When we say something is drawn
+in 3D, it&rsquo;s not really 3D. It&rsquo;s a 3D space projected down to a 2D image.
+Even if we were to plot the data using some future hologram technology that
+displayed it in a real 3D space, ultimately the viewer has to reconstruct
+the 3D nature from 2D projections on the retina at the back of the eye.
+When a person looks at a 3D picture or object, that person has to perform
+the &ldquo;inverse problem&rdquo; of converting that 2D image back into a 3D mental
+model. This problem, like many inverse problems, is ambiguous and error
+prone. Humans are quite adept at reconstructing a 3D mental model, but
+locations can be imprecise, and many of the visual cues we use are missing
+from 3D plots.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.org3DChart_Thumbnail.png)><img itemprop=thumbnail src=3DChart_Thumbnail.png alt="3D charts effects might look nice, but they tend to obscure data."></div><a href=3DChart.png itemprop=contentUrl></a><figcaption><p>3D charts effects might look nice, but they tend to obscure data.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:0;left:275px></div><p>Consequently, I recommend staying away from 3D charts as much as possible.
+Take for example this chart that uses 3D to show the trend of the average
+MPG of vehicles for each year divided by the origin of manufacture. It
+makes use of the extra dimension to space out the data, but the 3D
+projection makes it difficult to compare values. The upward trend is much
+less noticeable; a comparison of like entries for different origins is
+near impossible, and some of the bars are completely obscured by other
+ones.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries.svg)><img itemprop=thumbnail src=MultiSeries.svg alt="It is much more effective to show multiple series in a 2D plot than to try and space them out in a 3D plot."></div><a href=MultiSeries.svg itemprop=contentUrl></a><figcaption><p>It is much more effective to show multiple series in a 2D plot than to try and space them out in a 3D plot.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>Compare that to the same data shown as multiple series on the same flat X-Y
+chart shown here. Although this chart may look more plain, the data are
+much easier to understand. Trends are self evident, comparisons across
+series are easier, and no data are obscured.</p><p>Don&rsquo;t be drawn into the luster of 3D graphics. 3D graphics were tricky to
+create and a rarity 3 decades ago. But it&rsquo;s 2017 now. Even the lowest
+powered computer processors can quickly generate 3D graphics, and software
+packages that make it easy to generate 3D graphics abound. 3D no longer
+means you have the prowess to make amazing plots. It probably means you
+don&rsquo;t know enough about data display to do it right.</p><div style=clear:both></div><h2 id=axis-scaling>Axis Scaling</h2><p>Now that we have covered the most common of charts along with their
+strengths and weaknesses, let us consider some of the properties of these
+charts and how they can help or hinder our interpretation of the data. Our
+first topic is on the scaling of the axes. By this I mean the choice of the
+minimum and maximum values along each axis. The choice of this domain can
+have a huge impact on the interpretation of data.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgActiveBlocksBroken.svg)><img itemprop=thumbnail src=ActiveBlocksBroken.svg alt="This plot seems to show a sudden drop near cycle 200, but something is wrong."></div><a href=ActiveBlocksBroken.svg itemprop=contentUrl></a><figcaption><p>This plot seems to show a sudden drop near cycle 200, but something is wrong.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:0;left:275px></div><p>Consider the example here that was generated as part of the work for a
+technical report I was involved in. The plot shows the number of blocks
+generated by an adaptive mesher in a shock physics simulation. As the
+material in the simulation tends to fragment, we expected that the number
+of blocks required to represent them would go up, but the plot shows the
+number of blocks going down.</p><p>It is a curious effect, and we spent some time hypothesizing why this
+occurred. Then I noticed the numbers on the vertical axis. Although it
+looks like there is a sudden drop, the entire range is less than 0.03% of
+the total number. This plot was created with an R plotting package that,
+like most plotting software, chose an axis range based on the minimum and
+maximum values. This leads to a plot that consists of essentially all
+noise.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgActiveBlocksFixed.svg)><img itemprop=thumbnail src=ActiveBlocksFixed.svg alt="This rescaled plot is boring, but correct. There is no significant change in data."></div><a href=ActiveBlocksFixed.svg itemprop=contentUrl></a><figcaption><p>This rescaled plot is boring, but correct. There is no significant change in data.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:90px;left:250px></div><p>The corrected plot is shown here. With the Y axis appropriately scaled with
+a 0 baseline, it is now clearly shown that the variance in the data is
+insignificant.</p><p>This is a cautionary tale to be on the lookout for bad default values from
+plotting software. It is also a call to plotting software to be more
+careful about the default scaling. Most data ranges should start at 0. This
+is not always the case (for example, 0 Kelvin is seldom a good baseline for
+temperature), but if it is not think real hard about the justification.</p><p>This particular example was an honest mistake, but this form of data
+misrepresentation is quite common in wide media. <a href=http://www.vislies.org/2016/gallery/#axis-scales>Several egregious
+examples were presented at the most recent VisLies meeting</a>, and I recommend
+taking a look.</p><div style=clear:both></div><h2 id=using-color>Using Color</h2><p>Color can be an important component when plotting data. When used
+correctly, it can add another dimension to the data displayed. If used
+incorrectly, it can hide or confuse the display. Color is a fascinating and
+complex topic, and I could drone on at length on the subject (such as in
+<a href=../is-black-a-color/>this earlier blog post</a>). But instead I will just
+touch on some of the issues here and point to some solutions.</p><h3 id=choosing-good-color-sets>Choosing Good Color Sets</h3><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgColors_Bad.svg)><img itemprop=thumbnail src=Colors_Bad.svg alt="When colors are used poorly, plots get messy."></div><a href=Colors_Bad.svg itemprop=contentUrl></a><figcaption><p>When colors are used poorly, plots get messy.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:100px;left:275px></div><p>Here is shown a plot with exceptionally poor color choice. There are two
+major problems with the colors in this plot. The first problem is that the
+colors chosen are not conducive to seeing the data elements. These colors
+were chosen, as many naively chosen colors are, by picking supersaturated
+colors along the hue color wheel. These colors are not ideal. For starters,
+many are difficult to see. In particular, the yellow is almost invisible on
+the white background. And an uneven dispersal of colors makes some harder
+to distinguish some colors from others.</p><p>The criteria for choosing good colors is actually very complex. My advice
+is to avoid picking your own colors and instead pick a color set designed
+by a professional. The first place I go when I need a group of colors is
+<a href=https://colorbrewer2.org>https://colorbrewer2.org</a>. This <a href=https://colorbrewer2.org>Color Brewer</a> site contains a well
+organized collection of color sets of different sizes and for different use
+cases. Although you will see that the colors were originally designed for
+cartography, the color sets are so useful they are applied to just about
+every mode of visual data display. If you make a link to anything mentioned
+in this blog, make it to <a href=https://colorbrewer2.org>Color Brewer</a>. Fortunately, many plotting tools
+such as Excel, Tableau, Gnuplot, Matlab, and Toyplot have put some thought
+into the default color sets in recent versions. If, however, you find
+yourself using a plotting tool with poor colors, there is always <a href=https://colorbrewer2.org>Color
+Brewer</a>.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgColors_Bad.svg)><img itemprop=thumbnail src=Colors_Bad.svg alt="When colors are used poorly, plots get messy."></div><a href=Colors_Bad.svg itemprop=contentUrl></a><figcaption><p>When colors are used poorly, plots get messy.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:100px;left:275px></div><p>But enough about <a href=https://colorbrewer2.org>Color Brewer</a>. Let&rsquo;s get back to this plot, which I&rsquo;m
+repeating here so you don&rsquo;t have to keep scrolling back up. Another problem
+here is that I&rsquo;m using too many colors. The colors (which I&rsquo;ve also failed
+to label because there are too damn many) represent the different makes of
+vehicle, of which there are 31 in this database. Even if I were to label
+each color, 31 is far too many to reliably identify.</p><p>I know what you are thinking. Wait a minute. I can tell the difference
+between way more than 31 colors. Heck, an image of 24-bit colors (typical
+of most currently used image formats) can differentiate over 16 million
+colors, and new high dynamic range sensors and displays are working to
+differentiate even more. Surely we can see more than 31 different colors.</p><p>Well, yes and no. It is true that people (with normal vision) can
+differentiate millions of different colors over the entire visual color
+range. But this number is based on a &ldquo;just noticeable difference&rdquo; when two
+color swatches are placed adjacent to each other. It turns out that if you
+place the color swatches far from each other, you need a much more
+distinctive change to reliably compare colors.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgColorCompare_Thumbnail.png)><img itemprop=thumbnail src=ColorCompare_Thumbnail.png alt="Are the green squares the same color or the blue squares? Click on the image when you think you know."></div><a href=ColorCompare.gif itemprop=contentUrl></a><figcaption><p>Are the green squares the same color or the blue squares? Click on the image when you think you know.</p></figcaption></figure></div></div><p>To demonstrate this effect, take a look at the image here. There are two
+green squares and two blue squares. One set of squares is the exact same
+color, the other set are a slightly different shade. The question is, are
+the green the same, or are the blue the same. Once you think you know the
+answer click on the image or <a href=ColorCompare.gif>here</a>. Did you guess right?
+Even if you did, I bet you were surprised at how different the colors
+looked when they were close.</p><p>In all, it is a bad idea to expect a viewer to reliably differentiate more
+that 12 colors (including at least 1 for a background color). Furthermore,
+under most circumstances I would avoid using more than 7 as studies show
+most people have difficulty keeping track of more than 7 distinct items at
+one time.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgColors.svg)><img itemprop=thumbnail src=Colors.svg alt="Appropriate use of color in a scatterplot."></div><a href=Colors.svg itemprop=contentUrl></a><figcaption><p>Appropriate use of color in a scatterplot.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:100px;left:260px></div><p>Applying the two recommendations for color we just discussed, we can come
+up with a plot like the one shown here. The colors come from <a href=https://colorbrewer2.org>Color
+Brewer</a>, and we can see that they are both more
+aesthetically pleasing and easy to identify. We have also dramatically
+reduced the number of colors we are attempting to display. Instead of
+quixotically attempting to make sense out of every car make, we have
+divided the makes into three categories based on the origin of
+manufacturing. Not only is this division easier to label and see, we get
+some interesting information about these classes, such as the USA had
+cornered the market on the large, powerful cars.</p><h3 id=consistent-colors>Consistent Colors</h3><p>One final note about using colors. Often documents, particularly technical
+papers, will have multiple figures with related data. When colors change
+from one figure to the next, as shown in the following pair of images, it
+makes logical arguments hard to follow.</p><figure sytle="width: 100%; position: relative;"><table class=image-table><tr><td><img src=Colors.svg></td><td><img src=MultiSeries_Inconsistent_colors.svg></td?
+    </tr></table><img src=bad-example.png style=position:absolute;top:50%;left:90%><figcaption>The meaning of the colors changes from the left image to the right
+image. Don't do that in your papers.</figcaption></figure><p>If you are using colors to identify categories, strive to keep the meaning
+of colors consistent among all the figures.</p><figure sytle="width: 100%; position: relative;"><table class=image-table><tr><td><img src=Colors.svg></td><td><img src=MultiSeries.svg></td?
+    </tr></table><img src=good-example.png style=position:absolute;top:50%;left:90%><figcaption>The meaning of the colors changes from the left image to the right
+image. Don't do that in your papers.</figcaption></figure><h2 id=grid-lines>Grid Lines</h2><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries_Grid_Dark.svg)><img itemprop=thumbnail src=MultiSeries_Grid_Dark.svg alt="The grid lines completely take over the plot making the actual data hard to see."></div><a href=MultiSeries_Grid_Dark.svg itemprop=contentUrl></a><figcaption><p>The grid lines completely take over the plot making the actual data hard to see.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:120px;left:260px></div><p>Lots of designers like to add grid lines to their plots to make it easier
+to follow plotted data to the axes and determine their actual values.
+However, if you choose to add grid lines to the plot, make sure that they
+do not distract from the data being shown. In the plot shown here the grid
+lines are numerous and dark. They completely overshadow all of the data
+making it very difficult to see the actual data in the plot.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries_Grid_Light.svg)><img itemprop=thumbnail src=MultiSeries_Grid_Light.svg alt="Lighter grid lines make it much easier to focus on the data."></div><a href=MultiSeries_Grid_Light.svg itemprop=contentUrl></a><figcaption><p>Lighter grid lines make it much easier to focus on the data.</p></figcaption></figure></div></div><p>If you do decide to use grid lines, make them with muted colors that blend
+in with the background as shown here. The muted grid lines make it easier
+to focus on the actual data in the plot, yet they are still easy enough to
+follow to axes to get the actual values.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries_Grid_Light_Fewer.svg)><img itemprop=thumbnail src=MultiSeries_Grid_Light_Fewer.svg alt="There is no need to saturate a plot with lots of grid lines. Fewer is better."></div><a href=MultiSeries_Grid_Light_Fewer.svg itemprop=contentUrl></a><figcaption><p>There is no need to saturate a plot with lots of grid lines. Fewer is better.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>Personally, I find grid lines overrated. Gone are the days where we need a
+grid to draw values in a chart. The computer does that for us. We do not
+need all that many to get a good idea of what the values are. Vertical
+lines in a series like this are usually unnecessary, and we do not need so
+many horizontal lines.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries.svg)><img itemprop=thumbnail src=MultiSeries.svg alt="Don't be afraid to use no grid lines at all."></div><a href=MultiSeries.svg itemprop=contentUrl></a><figcaption><p>Don't be afraid to use no grid lines at all.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>For that matter, why do we need grid lines at all? Keep the canvas nice and
+clean to put all the focus on data. If you want to be able to retrieve the
+exact values for data, label them or put them in a table.<div style=clear:both></div></p><h2 id=legends>Legends</h2><p>A legend is that little box put in the corner or side of a chart that
+provides a key for the meaning of colors and shapes in the chart. Every
+plotting program I have ever used creates legends for their labeling
+purposes. This is because, from a programmer&rsquo;s perspective, it is easier to
+create a box of labels than to find a place in the data space.</p><p>That said, I have a personal dislike to legends. They are distracting
+because you constantly have to look back and forth between the data and the
+legend, which interferes with your concentration. You may have noticed that
+throughout all of my examples you have not seen one legend. Rather, I have
+chosen to place labels directly in the plot area. I find that to be much
+more effective labeling.</p><p>That said, I know you are going to create plots with legends simply because
+that is what all the software tools do. However, if you do choose to use
+the legend created by your plotting software, I ask that at the very least
+you order the entries in the legend in the same order as the data.</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgLegend_Backward.svg)><img itemprop=thumbnail src=Legend_Backward.svg alt="The legend ordering is inconsistent with the data."></div><a href=Legend_Backward.svg itemprop=contentUrl></a><figcaption><p>The legend ordering is inconsistent with the data.</p></figcaption></figure></div><img src=bad-example.png style=position:absolute;top:120px;left:180px></div><p>If we look at the plot here, we see that the &ldquo;Europe&rdquo; and &ldquo;Japan&rdquo; series
+generally have the highest value whereas the &ldquo;USA&rdquo; series is consistently
+lower. But the legend shows USA on the top. This creates an inconsistent
+mental model and makes it more difficult to interpret the data. Plotting
+programs consider the order in the legend as arbitrary and generally use
+the same order the data happen to be listed in. In this case, the order of
+the data happens to conflict with the values in the data.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgLegend_OK.svg)><img itemprop=thumbnail src=Legend_OK.svg alt="At least now the legend gives the same message as the data."></div><a href=Legend_OK.svg itemprop=contentUrl></a><figcaption><p>At least now the legend gives the same message as the data.</p></figcaption></figure></div></div><p>Legends are much more clear if you give some thought to the order in which
+the keys are listed. In this corrected example, the entries in the legend
+are reordered to better match the values in the data.</p><p>One word of caution about reordering the legend. A lot of plotting programs
+use the same order of entries in the legend to assign the colors of data
+series. The upshot is that reordering the legend may have the unintended
+side effect of changing the colors, which in turn might lead to
+inconsistent colors between plots if you make more than one. Thus, you
+might need to simultaneously edit the legend ordering and the colors.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries.svg)><img itemprop=thumbnail src=MultiSeries.svg alt="An awesome chart will label the data directly rather than use a legend."></div><a href=MultiSeries.svg itemprop=contentUrl></a><figcaption><p>An awesome chart will label the data directly rather than use a legend.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>Better yet, make your chart awesome and don&rsquo;t use legends at all! I find an
+effective technique for line series plots is to place a color-coded label
+at the right end of the line. It places all labels in the same relative
+space, makes it clear what label keys to what series, and ensures that the
+ordering of the labels is consistent with the data. Unfortunately, you are
+unlikely to see labeling like this any time soon from Excel&rsquo;s charts. To do
+this, you will have to go through the extra steps of turning off the
+legend, saving the chart as an image, and then adding your own labels after
+the fact in a separate image editor.<div style=clear:both></div></p><h2 id=lies-damn-lies-and-statistics>Lies, Damn Lies, and Statistics</h2><p>Our last topic is an advanced topic on revealing the data behind the simple
+statistics we often use when charting data. Often to make data visually
+accessible we aggregate data into averages (as I have done in many of my
+examples).</p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgBar_Sorted.svg)><img itemprop=thumbnail src=Bar_Sorted.svg alt="I said earlier this bar chart is good, but what data is it really hiding?"></div><a href=Bar_Sorted.svg itemprop=contentUrl></a><figcaption><p>I said earlier this bar chart is good, but what data is it really hiding?</p></figcaption></figure></div></div><p>Take for example this bar chart that I said earlier was a good example of a
+chart. It gives a clean story of the top car makes sold in the US and their
+fuel consumption rate. It gives us a clear ordering of makes, from best to
+worst, and an indication of the distribution of gas consumption.</p><p>But hiding within each of these bars are measurements from several models
+of cars. Is it true that that a Honda is necessarily more fuel efficient
+than any other make? That does not seem right, and a closer inspection of
+the data reveals that it is not right.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgDetail.svg)><img itemprop=thumbnail src=Detail.svg alt="1D scatterplots reveal an interesting distribution of data."></div><a href=Detail.svg itemprop=contentUrl></a><figcaption><p>1D scatterplots reveal an interesting distribution of data.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:0;left:260px></div><p>In this chart we replace each bar with a 1D scatterplot of all models for
+the respective make, of which there are many. This more detailed view into
+the data reveals a much more complex relationship among makes and fuel
+consumption. The original bar chart suggested that Honda cars have the best
+fuel efficiency, but we see that Volkswagen produced several models that
+had better MPG than all but one model of Honda. Mazda, which is fourth down
+on the list of averages, actually makes the model that has the best fuel
+efficiency.<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgMultiSeries.svg)><img itemprop=thumbnail src=MultiSeries.svg alt="I also said this line chart is good, but what is it hiding?"></div><a href=MultiSeries.svg itemprop=contentUrl></a><figcaption><p>I also said this line chart is good, but what is it hiding?</p></figcaption></figure></div></div><p>As a final example, let&rsquo;s take another look at this multi-line series chart
+I have used numerous times so far as a good example of plotting. The chart
+suggests that although all manufacturers improved their fuel efficiency
+during the 1970&rsquo;s, Japanese and European cars were always better than those
+from US makes. Based on this chart you would probably conclude that a US
+consumer should always go for a foreign make if he or she is interested in
+fuel efficiency. However, once again the data plotted is aggregated into
+averages. How valid are our conclusions?<div style=clear:both></div></p><div class=div-right><div class=box style=max-width:300px><figure itemprop=associatedMedia itemscope itemtype=http://schema.org/ImageObject><div class=img style=background-image:url(https://www.drmoron.orgDetail_MultiSeries_Trend.svg)><img itemprop=thumbnail src=Detail_MultiSeries_Trend.svg alt="A detailed view of the data reveals practical information not available in the summarized averages."></div><a href=Detail_MultiSeries_Trend.svg itemprop=contentUrl></a><figcaption><p>A detailed view of the data reveals practical information not available in the summarized averages.</p></figcaption></figure></div><img src=good-example.png style=position:absolute;top:120px;left:260px></div><p>Here is a plot that shows the data with all their detail. Here you can see
+that the actual story is more complex and interesting. The detailed data
+confirm that in 1970 a consumer interested in fuel efficiency should
+definitely prefer a foreign car over a domestic one. But by the early
+1980&rsquo;s the story had changed. Although US makes cornered the market on
+large, powerful cars, they also responded to consumer demand by making
+several models of fuel efficient cars. In fact, many domestic makes were
+very competitive to their foreign counterparts, and a consumer would be
+wise to look at both.</p><p>As I hope I have demonstrated, details matter. Aggregating data can bias
+conclusions quite a bit. Be wary when complex data are coalesced into
+simplified forms, and don&rsquo;t be afraid to dive deeper. Showing more data
+adds credence and honesty to your display.</p><h2 id=making-these-plots>Making These Plots</h2><p>As you have read this, you might have been wondering what I have been using
+to make these amazing, beautiful, wonderful, glorious example plots. (OK,
+you might have used less adjectives, but I bet you were thinking them.)
+Before I get there I will start by saying that I&rsquo;m guessing you already
+have a plotting program you are familiar with and that it probably is
+capable of creating equivalent plots of most of my examples.</p><p>I postulate (with zero evidence) that <a href=http://office.microsoft.com/en-us/excel>Microsoft Excel</a> is the most widely
+used plotting program. When I first started using Excel around 20 years
+ago, the plots it produced were, frankly, not all that good. But Microsoft
+has made many improvements over the years. Now that you know the ins and
+outs of good chart design, you can use the tools in Excel to make effective
+charts. (Note, I have no affiliation with Microsoft or any of its
+products.)</p><p>Although Excel does fine making standard 2D histograms, it would be
+difficult to get it to create the detailed plots I gave in the previous
+section. The best user-friendly GUI tool I have found for that is
+<a href=https://www.tableau.com/>Tableau</a>. I would describe the interface to Tableau as something like a
+visual pivot table. One of the features I like best about Tableau is that
+it allows and even encourages detailed views into data. The full featured
+product is quite expensive, but the <a href=https://public.tableau.com/s/>Tableau Public</a> version is free so
+long as you can release your data publicly. I highly recommend playing with
+the product.</p><p>Of course, neither of these products add labels correctly. (They both rely
+on legends.) The best you can do is plot without the legend and then use an
+image editing program to add them in after the fact.</p><p>That said, I did not use either of these two tools for these charts. I have
+created these charts by loading data into a Python script and using the
+<a href=https://toyplot.readthedocs.io/en/stable/>Toyplot</a> module. I hesitate to recommend this approach to everyone because
+using Python scripting for plotting is much more time consuming than other
+approaches (and inaccessible if you are not a programmer). But using this
+approach offers several advantages. First, the script leaves an artifact
+that makes the plotting reproducible. Second, I can use other Python
+modules, like <a href=http://pandas.pydata.org/>pandas</a>, to manipulate the data into a form amenable to
+plotting. Third, scripting provides me with a lot of control over the
+plotting so I, the picky person that I am, can make it look exactly as I
+want. I use Toyplot because it creates nice, clean displays of data. And
+although Toyplot does not automatically label data, I&rsquo;ve bugged the author
+enough to add features that make it easy to create labels without a legend.</p><p>If you are a coding wiz interested in how I used scripting to create these
+plots, you can click on the following links to see the code for <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/XY_Trend.ipynb>trend
+lines</a>, <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/XY_Scatterplot.ipynb>scatterplots</a>, <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/Bar_Basic.ipynb>bar charts</a>, <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/Colors.ipynb>colors</a>, <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/MultiSeries.ipynb>multiple series and grid
+lines</a>, <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/Detail_Make.ipynb>details for makes</a>, and <a href=https://github.com/kmorel/kmorel.github.io/blob/master/images/better-plots/Detail_MultiSeries.ipynb>details for year</a>.</p><h2 id=conclusion>Conclusion</h2><p>There is no right or wrong way to plot data. The best I can do is provide
+some advice. Plotting data is all about communicating information
+effectively and honestly.</p><p>Go forth, and be awesome with your data!</p><div class=blog-tags><a href=https://www.drmoron.org/tags/visualization/>visualization</a>&nbsp;
+<a href=https://www.drmoron.org/tags/plots/>plots</a>&nbsp;
+<a href=https://www.drmoron.org/tags/charts/>charts</a>&nbsp;</div><hr><section id=social-share><div class="list-inline footer-links"><div class=share-box aria-hidden=true><ul class=share><li><a href="//twitter.com/share?url=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f&text=Building%20Better%20Plots&via=" target=_blank title="Share on Twitter"><i class="fab fa-twitter"></i></a></li><li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f" target=_blank title="Share on Facebook"><i class="fab fa-facebook"></i></a></li><li><a href="//reddit.com/submit?url=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f&title=Building%20Better%20Plots" target=_blank title="Share on Reddit"><i class="fab fa-reddit"></i></a></li><li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f&title=Building%20Better%20Plots" target=_blank title="Share on LinkedIn"><i class="fab fa-linkedin"></i></a></li><li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f&title=Building%20Better%20Plots" target=_blank title="Share on StumbleUpon"><i class="fab fa-stumbleupon"></i></a></li><li><a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fwww.drmoron.org%2fposts%2fbetter-plots%2f&description=Building%20Better%20Plots" target=_blank title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li></ul></div></div></section></article><ul class="pager blog-pager"><li class=previous><a href=https://www.drmoron.org/posts/fastpass/ data-toggle=tooltip data-placement=top title="Fast Pass to the Slow Lane">&larr; Previous Post</a></li><li class=next><a href=https://www.drmoron.org/posts/sick-of-fearmongering/ data-toggle=tooltip data-placement=top title="Sick of Fearmongering">Next Post &rarr;</a></li></ul></div></div></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center footer-links"><li><a href=mailto:morelandsnl@gmail.com title="Email me"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://www.facebook.com/kenneth.moreland.7 title=Facebook><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-facebook fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://github.com/kmorel title=GitHub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://gitlab.com/kmorel title=GitLab><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-gitlab fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://bitbucket.org/kennethmoreland title=Bitbucket><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-bitbucket fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://linkedin.com/in/kmorel title=LinkedIn><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://stackoverflow.com/users/4971509/kenneth-moreland title=StackOverflow><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li><li><a href=https://www.youtube.com/channel/UC775K7V57u6GXF2jBqeUSMw title=Youtube><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-youtube fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="credits copyright text-muted"><a href=https://www.kennethmoreland.com>Kenneth Moreland</a>
+&nbsp;&bull;&nbsp;&copy;
+2013 - 2021
+&nbsp;&bull;&nbsp;
+<a href=https://www.drmoron.org>The Blog of Dr. Moron</a></p><p class="credits theme-by text-muted"><a href=https://gohugo.io>Hugo v0.102.3</a> powered &nbsp;&bull;&nbsp; Theme <a href=https://github.com/halogenica/beautifulhugo>Beautiful Hugo</a> adapted from <a href=https://deanattali.com/beautiful-jekyll/>Beautiful Jekyll</a></p></div></div></div></footer><script src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous></script>
+<script src=https://code.jquery.com/jquery-3.5.1.slim.min.js integrity=sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj crossorigin=anonymous></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
+<script src=https://www.drmoron.org/js/main.js></script>
+<script src=https://www.drmoron.org/js/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script><script>$(document).ready(function(){$("pre.chroma").css("padding","0")})</script><script>renderMathInElement(document.body)</script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js integrity=sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js integrity=sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q crossorigin=anonymous></script><script src=https://www.drmoron.org/js/load-photoswipe.js></script></body></html>

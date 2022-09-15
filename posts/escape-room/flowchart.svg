@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 169.05" style="enable-background:new 0 0 700 169.05;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#27AAE1;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+	.st3{fill:none;stroke:#231F20;stroke-miterlimit:10;}
+	.st4{fill:#231F20;}
+</style>
+<g>
+	<rect x="1.07" y="0" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 19.3967 41.0219)" class="st1 st2">Room 1</text>
+</g>
+<g>
+	<rect x="225.88" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 244.2099 41.0219)" class="st1 st2">Room 2</text>
+</g>
+<g>
+	<rect x="113.47" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 137.2994 41.0219)" class="st1 st2">Box 1</text>
+</g>
+<g>
+	<rect x="113.47" y="94.05" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 137.2994 135.0692)" class="st1 st2">Box 2</text>
+</g>
+<g>
+	<rect x="338.29" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 362.1127 41.0219)" class="st1 st2">Box 3</text>
+</g>
+<g>
+	<rect x="450.69" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 474.5193 41.0219)" class="st1 st2">Box 4</text>
+</g>
+<g>
+	<rect x="563.1" class="st0" width="75" height="75"/>
+	<text transform="matrix(1 0 0 1 586.9259 41.0219)" class="st1 st2">Box 5</text>
+</g>
+<text transform="matrix(1 0 0 1 673.6771 41.0222)" class="st1 st2">Exit</text>
+<g>
+	<g>
+		<line class="st3" x1="76.07" y1="38" x2="107.44" y2="38"/>
+		<g>
+			<path class="st4" d="M113.47,38c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C107.11,35.15,110.63,36.95,113.47,38z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="188.47" y1="37.5" x2="219.84" y2="37.5"/>
+		<g>
+			<path class="st4" d="M225.88,37.5c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C219.52,34.65,223.04,36.45,225.88,37.5z"
+				/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="300.88" y1="37.5" x2="332.25" y2="37.5"/>
+		<g>
+			<path class="st4" d="M338.29,37.5c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C331.92,34.65,335.45,36.45,338.29,37.5z"
+				/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="413.29" y1="37.5" x2="444.66" y2="37.5"/>
+		<g>
+			<path class="st4" d="M450.69,37.5c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C444.33,34.65,447.85,36.45,450.69,37.5z"
+				/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="525.69" y1="37.5" x2="557.06" y2="37.5"/>
+		<g>
+			<path class="st4" d="M563.1,37.5c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C556.74,34.65,560.26,36.45,563.1,37.5z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="638.1" y1="38" x2="660.12" y2="38"/>
+		<g>
+			<path class="st4" d="M666.15,38c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C659.79,35.15,663.31,36.95,666.15,38z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st3" x1="89.78" y1="131.55" x2="107.44" y2="131.55"/>
+		<g>
+			<path class="st4" d="M113.47,131.55c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75
+				C107.11,128.7,110.63,130.49,113.47,131.55z"/>
+		</g>
+	</g>
+</g>
+<line class="st3" x1="89.78" y1="131.55" x2="89.78" y2="38"/>
+<g>
+	<g>
+		<line class="st3" x1="202.19" y1="53.23" x2="219.84" y2="53.23"/>
+		<g>
+			<path class="st4" d="M225.88,53.23c-2.84,1.05-6.36,2.85-8.55,4.76l1.72-4.76l-1.72-4.75C219.52,50.38,223.04,52.17,225.88,53.23
+				z"/>
+		</g>
+	</g>
+</g>
+<line class="st3" x1="188.47" y1="131.55" x2="202.19" y2="131.55"/>
+<line class="st3" x1="202.19" y1="53.23" x2="202.19" y2="131.55"/>
+</svg>
