@@ -85,7 +85,7 @@ can plug and unplug the drill to turn it on and off. No problem.
 ![](sandbox-prop.jpg)
 {{% /right %}}
 
-I still need to place this assembly upright. The easiest play I found to do
+I still need to place this assembly upright. The easiest place I found to do
 so: a sandbox in my backyard. I just buried the tail end of the drill a bit
 in the sand.
 
