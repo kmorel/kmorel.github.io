@@ -21,7 +21,7 @@ beutiful patterns with no effort.
 
 I'm all about no effort. Except, alas, the spin art kit was long gone.
 
-Well, that's just quiter talk. Just because you don't have a spin art kit
+Well, that's just quitter talk. Just because you don't have a spin art kit
 doesn't mean you can't do spin art.
 
 # Chuck it Up to Bad Planning
