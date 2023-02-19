@@ -31,3 +31,7 @@ table.image-table * {
     border: none;
     vertical-align: top;
 }
+
+img {
+  display: inline;
+}
