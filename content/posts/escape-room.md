@@ -719,7 +719,7 @@ the books referenced, the jigsaw puzzle image, and the clip art used.
 [the outline of my escape room]: https://docs.google.com/document/d/11YxNCf2Au3g4y_QLuE8hOwZG0qTaUd4bXba5y05KIfE
 [collection of escape room material]: https://drive.google.com/drive/folders/179E98Wvtp3uVoPo2ZyyKfKDsg4T12RJX
 [contains a note]: https://docs.google.com/document/d/10--JBN5d_-Ep5JcudzIY_30ExXoUZ9AY9dxP2FDUNqc/edit?usp=sharing
-[an email from Dr. Beaker]: https://drive.google.com/open?id=1p_FVdpAH3dndY3RYK2RScIghp34xDZpt
+[an email from Dr. Beaker]: https://sites.google.com/view/morelandsnl-email-help/?usp=sharing
 [piece of paper with several fragments of QR codes]: https://drive.google.com/open?id=1lH7wiFS8-E8_vk7zIObU0BwleA0APDvuGscZTpi5vjc
 [Mad fold-in]: https://en.wikipedia.org/wiki/Mad_Fold-in
 [a crossword puzzle]: https://drive.google.com/open?id=1Ur05iVuQ9jtpPPDRUWlStVHBfyhE5Xkoz0Mt5XwN0wE
@@ -728,8 +728,8 @@ the books referenced, the jigsaw puzzle image, and the clip art used.
 [A note next to the beaker]: https://drive.google.com/open?id=10dn_c5waQkUl4_-smn2fOj2lM7ikJz0smi5xVDhcqec
 [a digit decoder and a digit template]: https://docs.google.com/presentation/d/1Zic5HYOMT3433VBN_uZrN9TnVB0F5FhPq9Wf7F8WxZY/edit?usp=sharing
 [note about increasing security]: https://docs.google.com/document/d/1-Z_vr551MEhWZXXhKSqLSuNZbA8e7pwUrCQZJmr1B-k/edit?usp=sharing
-[login page]: https://drive.google.com/open?id=1BCV6-8Ihmmzy6rkf0r5Cj3R1QT1bfbzP
-[secure note from Dr. Beaker]: https://drive.google.com/open?id=1arNU4XFZKNl7z5Ld_mNwpPpFcTy-beiM
+[login page]: https://sites.google.com/view/morelandsnl-secure-login/?usp=sharing
+[secure note from Dr. Beaker]: https://sites.google.com/view/morelandsnl-secure-message/?usp=sharing
 [reset password form]: https://drive.google.com/open?id=1kXNU3kcv5Q12U32K7Pmb9uuSX5Tf8YmZQtKz08gfMw8
 [final note]: https://docs.google.com/document/d/1eIbun_dEfuwNRvpXgCa_7HraHGea_aMTIRsOTXFo9Xg/edit?usp=sharing
 [_Pandemic_ board game]: https://www.zmangames.com/en/games/pandemic/
