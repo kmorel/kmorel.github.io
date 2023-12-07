@@ -29,7 +29,7 @@ This blog post is not about how to define a Sphinx extension; the
 Rather, this blog addresses a specific part of Sphinx extensions that I
 find particularly challenging. The extension routines must return a [tree
 structure defining the elements of the document] (which in turn are used to
-geneate output in various forms like html, tex, and so on). For a newbie
+generate output in various forms like html, tex, and so on). For a newbie
 such as myself, it's more than I really want to learn.
 
 A much easier approach is to have the Python code build new
@@ -267,6 +267,6 @@ something better. If you know of a better method, please let me know.
 [a stackoverflow post]: https://stackoverflow.com/questions/34350844/how-to-add-rst-format-in-nodes-for-directive
 [a blog by Doug Hellmann]: https://doughellmann.com/posts/defining-custom-roles-in-sphinx/
 [DOI Foundation's name resolver]: https://dx.doi.org/
-[sphinx_nested_parse.py]: https://github.com/kmorel/sphinx-nested-parse/blob/main/_ext/sphinx_nested_parse.py
-[my_sphinx_extension.py]: https://github.com/kmorel/sphinx-nested-parse/blob/main/_ext/my_sphinx_extension.py
-[example Sphinx project]: https://github.com/kmorel/sphinx-nested-parse/tree/main
+[sphinx_nested_parse.py]: https://github.com/kmorel/sphinx-nested-parse/blob/blog-2023-12-06/_ext/sphinx_nested_parse.py
+[my_sphinx_extension.py]: https://github.com/kmorel/sphinx-nested-parse/blob/blog-2023-12-06/_ext/my_sphinx_extension.py
+[example Sphinx project]: https://github.com/kmorel/sphinx-nested-parse/tree/blog-2023-12-06
