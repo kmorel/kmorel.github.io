@@ -29,7 +29,7 @@ custom reStructuredText elements.</p><p>This blog post is not about how to defin
 Rather, this blog addresses a specific part of Sphinx extensions that I
 find particularly challenging. The extension routines must return a <a href=https://docutils.sourceforge.io/docs/ref/doctree.html>tree
 structure defining the elements of the document</a> (which in turn are used to
-geneate output in various forms like html, tex, and so on). For a newbie
+generate output in various forms like html, tex, and so on). For a newbie
 such as myself, it&rsquo;s more than I really want to learn.</p><p>A much easier approach is to have the Python code build new
 reStructuredText. That is, just have the custom directive or role generate
 the reStructuredText that should be inserted much like a LaTeX
@@ -158,9 +158,9 @@ publication page of that DOI.</p><div class=highlight><pre tabindex=0 class=chro
 <code>:doi:`10.1007/978-3-319-20119-1_34` </code>, it will internally create the
 replacement text <code>`doi:10.1007/978-3-319-20119-1_34 &lt;https://dx.doi.org/10.1007/978-3-319-20119-1_34>`_</code>. This in turn will
 create the following link in the code: <a class="reference external" href=https://dx.doi.org/10.1007/978-3-319-20119-1_34>doi:10.1007/978-3-319-20119-1_34</a></p><h2 id=putting-it-together>Putting it Together</h2><p>To make them easier to use, I&rsquo;ve put together these two features in a
-simple <a href=https://github.com/kmorel/sphinx-nested-parse/blob/main/_ext/sphinx_nested_parse.py>sphinx_nested_parse.py</a> Python file. This file can be loaded as a
+simple <a href=https://github.com/kmorel/sphinx-nested-parse/blob/blog-2023-12-06/_ext/sphinx_nested_parse.py>sphinx_nested_parse.py</a> Python file. This file can be loaded as a
 Python module and used within a Sphinx extension such as this
-<a href=https://github.com/kmorel/sphinx-nested-parse/blob/main/_ext/my_sphinx_extension.py>my_sphinx_extension.py</a> extension.</p><p>Putting all of that together, here is a simple <a href=https://github.com/kmorel/sphinx-nested-parse/tree/main>example Sphinx project</a>
+<a href=https://github.com/kmorel/sphinx-nested-parse/blob/blog-2023-12-06/_ext/my_sphinx_extension.py>my_sphinx_extension.py</a> extension.</p><p>Putting all of that together, here is a simple <a href=https://github.com/kmorel/sphinx-nested-parse/tree/blog-2023-12-06>example Sphinx project</a>
 using an extension with this nested parsing.</p><h2 id=final-words>Final Words</h2><p>I mentioned earlier that I am by no means an expert in Sphinx extensions. I
 have been using Sphinx for less than a year at this time and have only made
 a few custom commands.</p><p>That said, I feel that nested parsing is a glaring feature gap in the
