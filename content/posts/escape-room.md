@@ -4,6 +4,12 @@ date: 2020-04-29
 tags: [ fun, games, escape room, locks ]
 ---
 
+> **Update: December 15, 2024**
+>
+> Since writing this blog post, we have created several new rooms and
+> puzzles. For many new ideas, please visit me at
+> https://www.open-sesame.xyz/.
+
 As with many people around the world at this time, our family has been
 pretty much stuck at home for social distancing. Recently our daughter had
 a suggestion to entertain ourselves: We could build escape rooms for each
