@@ -25,7 +25,7 @@ disqusShortname = "kmorel"
   subtitle = "I blog because there is no peer review like no peer review."
   mainSections = ["post","posts"]
   #logo = "img/avatar-icon.png" # Expecting square dimensions
-  logo = "https://www.gravatar.com/avatar/5785d806cffc98ab63daa2d1a43f0c5e?s=100"
+  logo = "https://www.gravatar.com/avatar/551024260f569240a524c5b06bd067d41b813f82d1a442b3e1e915ff82fd6cb1?s=100"
   favicon = "favicon.png"
   dateFormat = "January 2, 2006"
   since = 2013
