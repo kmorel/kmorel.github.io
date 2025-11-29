@@ -1,4 +1,4 @@
-baseurl = "https://www.drmoron.org"
+#baseurl = "https://www.drmoron.org"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "The Blog of Dr. Moron"
@@ -23,6 +23,7 @@ disqusShortname = "kmorel"
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
   subtitle = "I blog because there is no peer review like no peer review."
+  homeTitle = "The Blog of Dr. Moron"
   mainSections = ["post","posts"]
   #logo = "img/avatar-icon.png" # Expecting square dimensions
   logo = "https://www.gravatar.com/avatar/551024260f569240a524c5b06bd067d41b813f82d1a442b3e1e915ff82fd6cb1?s=100"
