@@ -83,3 +83,24 @@ For now, the [best advice] is standard prevention.
 [WORLD WAR FLU Deadly coronavirus could have ALREADY spread to UK after killing 17 and infecting 10,000 in China alone]: https://www.thesun.co.uk/news/10799738/coronavirus-could-already-spread-uk/
 [2019-nCoV appears to have a lower mortality rate than the recent SARS and MERS outbreaks]: https://www.sciencealert.com/how-worried-should-we-be-about-the-wuhan-coronavirus-outbreak
 [best advice]: https://www.cdc.gov/coronavirus/2019-ncov/about/prevention-treatment.html
+
+
+> **Update: December 1, 2025**
+>
+> Well, this post aged like milk. Although I stand by most of what I said in
+> this post, my condescending attitude was, in retrospect, inappropriate for the
+> seriousness of what the disease now known as COVID-19 became.
+>
+> In looking back at my "more accurate" depiction of COVID-19 cases, I see an
+> issue is that although I correctly proportioned the number of cases, what I
+> failed to take into account that not all cases have the same significance. The
+> difference between the 499th and 500th case is within statistical error, but
+> the difference between 0 cases and 1 cases is a _big deal_. The first case
+> signals a spread of the disease across boarders and a serious step toward a
+> pandemic. Representing case 1 as just another case was a mistake on my part.
+> At the very least, there should be a visual indication highlighting where any
+> cases have been established. Perhaps something like this.
+>
+> ![Coronavirus](coronavirus-honest-2.svg)
+>
+> I don't claim this to be perfect, but I think it gets the point across better.
