@@ -2,6 +2,7 @@
 title: "Screwed Up Poker"
 date: 2014-08-01
 tags: [ games, poker, cards, probability ]
+summary: "A deep dive on the odds of a simple gambling game named 'screw your neighbor.'"
 ---
 
 
@@ -17,7 +18,6 @@ attr="© Steven Depolo, Attribution 2.0 Generic"
 attrlink_="http://creativecommons.org/licenses/by/2.0/"
 >}}
 {{< /right >}}
-
 This game is a form of poker in a very loose sense in that it involves a
 standard deck of bridge cards and involves betting money, but the
 similarity stops there. The game is a process of elimination. Each person

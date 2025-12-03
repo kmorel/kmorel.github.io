@@ -2,6 +2,7 @@
 title: "The Chicken or the Egg?"
 date: 2013-12-03
 tags: [ philosophy ]
+summary: "Answering the age old question of which came first."
 ---
 
 Which came first, the chicken or the egg? As philosophical questions go,

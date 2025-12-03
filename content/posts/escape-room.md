@@ -2,6 +2,7 @@
 title: "DIY Escape Room"
 date: 2020-04-29
 tags: [ fun, games, escape room, locks ]
+summary: "A fun game to replicate the escape room experience at home. (For even more new ideas, visit https://www.open-sesame.xyz/.)"
 ---
 
 > **Update: December 15, 2024**

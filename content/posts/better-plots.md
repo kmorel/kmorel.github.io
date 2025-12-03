@@ -2,6 +2,7 @@
 title: "Building Better Plots"
 date: 2017-02-18
 tags: [ visualization, plots, charts ]
+summary: "Advice and best practices for creating simple data plots."
 ---
 
 Consider the lowly chart. Chances are you
@@ -18,7 +19,6 @@ programs and libraries are dedicated to plotting charts.
   caption="A small montage of plots. Some are good. Some are bad. Let's find out which are which."
 >}}
 {{< /right >}}
-
 But although all of this software gives you the tools to display data in
 meaningful ways, they also give you plenty of leverage to proverbially
 shoot yourself in the foot. Have you given much thought about what makes a

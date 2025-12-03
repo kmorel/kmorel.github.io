@@ -2,6 +2,7 @@
 title: "TV With a Side of MoCA"
 date: 2015-04-03
 tags: [ electronics, TiVo, MoCA ]
+summary: "A description of using MoCA to use existing coax cable to implement wired ethernet without pulling new cat cables."
 ---
 
 

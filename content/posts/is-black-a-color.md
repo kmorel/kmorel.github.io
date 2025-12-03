@@ -2,6 +2,7 @@
 title: "Is Black a Color?"
 date: 2013-11-09
 tags: [ color, perception, visual system ]
+summary: "An overview of basic color theory."
 ---
 
 What is Color?  This seems like a silly question. We are all familiar with

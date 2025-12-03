@@ -2,6 +2,7 @@
 title: "Lego Mechanical Computer"
 date: 2013-08-01
 tags: [ computation, mechanical computer, LEGO, flip-flop ]
+summary: "A device with no electronics but nevertheless able to do simple computations."
 ---
 
 
