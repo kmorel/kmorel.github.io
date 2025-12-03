@@ -2,6 +2,7 @@
 title: "Fast Pass to the Slow Lane"
 date: 2015-07-31
 tags: [ economics, lines, queues, Disney ]
+summary: "An observation of how making lines faster for some people can make them faster for all people."
 ---
 
 This summer our family took a vacation in southern California, and we had a

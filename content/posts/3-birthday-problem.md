@@ -2,6 +2,7 @@
 title: "The Three Birthday Problem"
 date: 2013-08-14
 tags: [ probability, birthday ]
+summary: "What are the odds of 3 people having the same birthday?"
 ---
 
 A while ago one of my aunts posted that 3 of her Facebook friends were

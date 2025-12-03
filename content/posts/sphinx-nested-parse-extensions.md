@@ -2,6 +2,7 @@
 title: "Easy Sphinx Extensions with Nested Parsing"
 date: 2023-12-06
 tags: [ documentation, programming, sphinx, LaTeX ]
+summary: "A hack to define new directives and roles for Sphinx as macros in reStructuredText rather than build new Sphinx code in Python."
 ---
 
 I've recently started the process of converting some software documentation

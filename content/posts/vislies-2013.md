@@ -2,6 +2,7 @@
 title: "VisLies 2013"
 date: 2013-10-15
 tags: [ visualization, VisLies, perception ]
+summary: "An overview of the presentations at VisLies 2013."
 ---
 
 

@@ -2,6 +2,7 @@
 title: "MiniDV Home Video Transfer"
 date: 2023-02-18
 tags: [ video format, MiniDV, camcorder, Quicktime, VLC, OBS ]
+summary: "The hardware and software needed to transfer data from the Firewire DV port typical on MiniDV camcorders to a modern Thunderbolt or USB-C port."
 ---
 
 {{% right %}}

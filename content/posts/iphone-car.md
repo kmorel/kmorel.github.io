@@ -2,6 +2,7 @@
 title: "RC Car? There's an App for That"
 date: 2014-01-25
 tags: [ hobby, iPhone, Arduino, remote control ]
+summary: "A project to replace the innards of an RC car to control it with a custom iPhone app."
 ---
 
 There was a time while I went to school when I lived and breathed
@@ -12,7 +13,6 @@ doing absolutely nothing with it and forgetting most of what I learned.
   {{< figure src="iphone-book.gif"
   link="http://shop.oreilly.com/product/0636920029281.do" width="180px" >}}
 {{< /right >}}
-
 Enjoyably, over the last year I've been exposed to a series of iPhone
 electronics projects through the wonderful [_iPhone & iPad Electronics
 Projects_ book] by Mike Westerfield. By far my favorite project in the book
@@ -74,7 +74,6 @@ twice the amperage rating as my previous circuit.
   {{< figure src="motorshield-thumb.jpg" link="motorshield.jpg"
   width="400px" caption="The circuit driving the RC motors." >}}
 {{< /right >}}
-
 Here is where the fun starts with the project. You crack open the case of
 the RC car to get at that little piece of electronics controlling
 everything. Now rip that sucker out of the car. There are 6 wires that you
@@ -112,7 +111,6 @@ So I guess being stupid and lazy isn't so bad after all.
   {{< figure src="bleshield-thumb.jpg" link="bleshield.jpg" width="400px"
   caption="The Arduino RedBearLabs Bluetooth low energy shield." >}}
 {{< /right >}}
-
 The next thing we need is a way to interface our electronics with an
 iPhone, and that's where our second shield comes in. For this we use a
 RedBearLabs Bluetooth low energy shield, shown here. You'll notice that the
@@ -154,7 +152,6 @@ However, I made [some changes] to the program for a variety of reasons.
 {{< right >}}
   {{< figure src="fullcar-thumb.jpg" link="fullcar.jpg" width="400px" >}}
 {{< /right >}}
-
 There is something rousing about watching a physical device like an RC car
 under the control of the all-purpose, portable, tricorder-like device, and
 it's been a really fun project. That's good, because ultimately this

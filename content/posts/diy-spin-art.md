@@ -2,6 +2,7 @@
 title: "Diy Spin Art"
 date: 2022-12-12
 tags: [ art, dangerous, stupid ]
+summary: "A dumb and dangerous use of a power drill to make spin art. I definitely don't recommend doing this at home."
 ---
 
 Before I start, let me say that everything in this blog is stupid. You

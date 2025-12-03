@@ -2,6 +2,7 @@
 title: "TV Remote? There's an App for That"
 date: 2014-11-05
 tags: [ hobby, Raspberry Pi, iPhone, remote control ]
+summary: "A project using a Raspberry Pi with wired IR emitters to create a server controlling the equipment of a home entertainment center."
 ---
 
 I lost count of how many times I have sat down to vegetate in the front of

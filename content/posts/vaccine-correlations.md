@@ -2,6 +2,7 @@
 title: "Strange Correlations in COVID-19 Data"
 date: 2021-11-09
 tags: [ statistics, VisLies ]
+summary: "Some demonstrations of how correlations can be deceiving."
 ---
 
 I recently had the pleasure to host another session of [VisLies]. As an

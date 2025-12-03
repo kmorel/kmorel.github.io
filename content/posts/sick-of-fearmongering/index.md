@@ -2,6 +2,7 @@
 title: "Sick of Fearmongering"
 date: 2020-01-28
 tags: [ visualization, VisLies, perception ]
+summary: "Some comments on data display of spreading disease."
 ---
 
 As of this writing, China is battling a [fierce outbreak of a new

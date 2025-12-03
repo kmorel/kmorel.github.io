@@ -2,6 +2,7 @@
 title: "Upping My Geekiness Quotient"
 date: 2013-07-06
 tags: [ ]
+summary: "I'm starting a blog."
 ---
 
 I think it is time to up my geekiness quotient.  I know; I'll start a blog.

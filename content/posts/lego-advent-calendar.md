@@ -2,6 +2,7 @@
 title: "LEGO Advent Calendar"
 date: 2020-11-23
 tags: [ LEGO, holiday, Christmas ]
+summary: "A fun variation of a holiday advent calender where every day the kids can build a little bit more of a building block model."
 ---
 
 {{% right %}}
