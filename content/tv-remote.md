@@ -1,4 +1,4 @@
 ---
-redirect: posts/tv-remote/
+redirect: post/tv-remote/
 ---
 

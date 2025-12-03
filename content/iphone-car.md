@@ -1,5 +1,5 @@
 ---
 title: "Iphone Car"
-redirect: posts/iphone-car/
+redirect: post/iphone-car/
 ---
 

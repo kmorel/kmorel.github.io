@@ -1,5 +1,5 @@
 ---
 title: "Mechanical Computer"
-redirect: "posts/mechanical-computer"
+redirect: "post/mechanical-computer"
 ---
 

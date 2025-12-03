@@ -1,4 +1,4 @@
 ---
-redirect: "posts/tv-moca/"
+redirect: "post/tv-moca/"
 ---
 

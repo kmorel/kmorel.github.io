@@ -1,4 +1,4 @@
 ---
-redirect: "posts/escape-room/"
+redirect: "post/escape-room/"
 ---
 

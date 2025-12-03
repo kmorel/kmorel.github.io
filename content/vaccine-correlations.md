@@ -1,4 +1,4 @@
 ---
-redirect: "posts/vaccine-correlations/"
+redirect: "post/vaccine-correlations/"
 ---
 

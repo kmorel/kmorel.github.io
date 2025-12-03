@@ -1,4 +1,4 @@
 ---
-redirect: posts/screw-your-neighbor/
+redirect: post/screw-your-neighbor/
 ---
 
