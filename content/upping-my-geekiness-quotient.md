@@ -1,4 +1,4 @@
 ---
-redirect: posts/upping-my-geekiness-quotient/
+redirect: post/upping-my-geekiness-quotient/
 ---
 

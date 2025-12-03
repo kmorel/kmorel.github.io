@@ -1,5 +1,5 @@
 ---
 title: "Chicken or Egg"
-redirect: "posts/chicken-or-egg/"
+redirect: "post/chicken-or-egg/"
 ---
 

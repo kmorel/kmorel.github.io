@@ -1,4 +1,4 @@
 ---
-redirect: "posts/lego-advent-calendar/"
+redirect: "post/lego-advent-calendar/"
 ---
 

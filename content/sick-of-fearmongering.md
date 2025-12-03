@@ -1,4 +1,4 @@
 ---
-redirect: "posts/sick-of-fearmongering/"
+redirect: "post/sick-of-fearmongering/"
 ---
 

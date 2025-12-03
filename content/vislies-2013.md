@@ -1,5 +1,5 @@
 ---
 title: "Vislies 2013"
-redirect: "posts/vislies-2013/"
+redirect: "post/vislies-2013/"
 ---
 

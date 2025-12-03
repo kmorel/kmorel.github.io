@@ -1,4 +1,4 @@
 ---
-redirect: "posts/fastpass/"
+redirect: "post/fastpass/"
 ---
 
